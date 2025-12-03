@@ -1,0 +1,25 @@
+# Swift Package Manager
+.build/
+.swiftpm/
+*.xcodeproj
+*.xcworkspace
+
+# macOS
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Build artifacts
+LookMirror.app/
+*.dmg
+
+# Development
+dev_watch.sh
+
+# Xcode
+xcuserdata/
+DerivedData/
+
+# Test files
+test_av.swift
