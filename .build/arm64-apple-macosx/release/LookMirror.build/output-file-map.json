@@ -1,0 +1,37 @@
+{
+  "": {
+    "dependencies": "/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/LookMirror.d",
+    "object": "/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/LookMirror.o",
+    "swift-dependencies": "/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/master.swiftdeps"
+  },
+  "/Users/kaifengyang/Desktop/antigravity/look-mirror/Sources/LookMirror/CameraManager.swift": {
+    "object": "/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/CameraManager.swift.o",
+    "swiftmodule": "/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/CameraManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/CameraManager.swiftdeps",
+    "diagnostics": "/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/CameraManager.dia"
+  },
+  "/Users/kaifengyang/Desktop/antigravity/look-mirror/Sources/LookMirror/CameraView.swift": {
+    "object": "/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/CameraView.swift.o",
+    "swiftmodule": "/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/CameraView~partial.swiftmodule",
+    "swift-dependencies": "/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/CameraView.swiftdeps",
+    "diagnostics": "/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/CameraView.dia"
+  },
+  "/Users/kaifengyang/Desktop/antigravity/look-mirror/Sources/LookMirror/ContentView.swift": {
+    "object": "/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/ContentView.swift.o",
+    "swiftmodule": "/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/ContentView~partial.swiftmodule",
+    "swift-dependencies": "/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/ContentView.swiftdeps",
+    "diagnostics": "/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/ContentView.dia"
+  },
+  "/Users/kaifengyang/Desktop/antigravity/look-mirror/Sources/LookMirror/LookMirrorApp.swift": {
+    "object": "/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/LookMirrorApp.swift.o",
+    "swiftmodule": "/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/LookMirrorApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/LookMirrorApp.swiftdeps",
+    "diagnostics": "/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/LookMirrorApp.dia"
+  },
+  "/Users/kaifengyang/Desktop/antigravity/look-mirror/Sources/LookMirror/SettingsManager.swift": {
+    "object": "/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/SettingsManager.swift.o",
+    "swiftmodule": "/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/SettingsManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/SettingsManager.swiftdeps",
+    "diagnostics": "/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/SettingsManager.dia"
+  }
+}

@@ -1,0 +1,66 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "LookMirror-arm64-apple-macosx15.0-release.exe": ["<LookMirror-arm64-apple-macosx15.0-release.exe>"]
+  "LookMirror-arm64-apple-macosx15.0-release.module": ["<LookMirror-arm64-apple-macosx15.0-release.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<LookMirror-arm64-apple-macosx15.0-release.exe>","<LookMirror-arm64-apple-macosx15.0-release.module>"]
+  "test": ["<LookMirror-arm64-apple-macosx15.0-release.exe>","<LookMirror-arm64-apple-macosx15.0-release.module>"]
+default: "main"
+nodes:
+  "/Users/kaifengyang/Desktop/antigravity/look-mirror/Sources/LookMirror/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/kaifengyang/Desktop/antigravity/look-mirror/Sources/LookMirror/CameraManager.swift","/Users/kaifengyang/Desktop/antigravity/look-mirror/Sources/LookMirror/CameraView.swift","/Users/kaifengyang/Desktop/antigravity/look-mirror/Sources/LookMirror/ContentView.swift","/Users/kaifengyang/Desktop/antigravity/look-mirror/Sources/LookMirror/LookMirrorApp.swift","/Users/kaifengyang/Desktop/antigravity/look-mirror/Sources/LookMirror/SettingsManager.swift"]
+    outputs: ["/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/sources"]
+    description: "Write auxiliary file /Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/sources"
+
+  "/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/CameraManager.swift.o","/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/CameraView.swift.o","/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/ContentView.swift.o","/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/LookMirrorApp.swift.o","/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/SettingsManager.swift.o"]
+    outputs: ["/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.product/Objects.LinkFileList"
+
+  "/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt"
+
+  "<LookMirror-arm64-apple-macosx15.0-release.exe>":
+    tool: phony
+    inputs: ["/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror"]
+    outputs: ["<LookMirror-arm64-apple-macosx15.0-release.exe>"]
+
+  "<LookMirror-arm64-apple-macosx15.0-release.module>":
+    tool: phony
+    inputs: ["/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/CameraManager.swift.o","/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/CameraView.swift.o","/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/ContentView.swift.o","/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/LookMirrorApp.swift.o","/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/SettingsManager.swift.o","/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/Modules/LookMirror.swiftmodule"]
+    outputs: ["<LookMirror-arm64-apple-macosx15.0-release.module>"]
+
+  "C.LookMirror-arm64-apple-macosx15.0-release.exe":
+    tool: shell
+    inputs: ["/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/CameraManager.swift.o","/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/CameraView.swift.o","/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/ContentView.swift.o","/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/LookMirrorApp.swift.o","/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/SettingsManager.swift.o","/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.product/Objects.LinkFileList"]
+    outputs: ["/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror"]
+    description: "Linking ./.build/arm64-apple-macosx/release/LookMirror"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release","-o","/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror","-module-name","LookMirror","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-dead_strip","-Xlinker","-alias","-Xlinker","_LookMirror_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx13.0","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.LookMirror-arm64-apple-macosx15.0-release.module":
+    tool: shell
+    inputs: ["/Users/kaifengyang/Desktop/antigravity/look-mirror/Sources/LookMirror/CameraManager.swift","/Users/kaifengyang/Desktop/antigravity/look-mirror/Sources/LookMirror/CameraView.swift","/Users/kaifengyang/Desktop/antigravity/look-mirror/Sources/LookMirror/ContentView.swift","/Users/kaifengyang/Desktop/antigravity/look-mirror/Sources/LookMirror/LookMirrorApp.swift","/Users/kaifengyang/Desktop/antigravity/look-mirror/Sources/LookMirror/SettingsManager.swift","/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt","/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/sources"]
+    outputs: ["/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/CameraManager.swift.o","/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/CameraView.swift.o","/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/ContentView.swift.o","/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/LookMirrorApp.swift.o","/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/SettingsManager.swift.o","/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/Modules/LookMirror.swiftmodule"]
+    description: "Compiling Swift Module 'LookMirror' (5 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","LookMirror","-emit-dependencies","-emit-module","-emit-module-path","/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/Modules/LookMirror.swiftmodule","-output-file-map","/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/output-file-map.json","-whole-module-optimization","-num-threads","10","-c","@/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/LookMirror.build/sources","-I","/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/Modules","-target","arm64-apple-macosx13.0","-whole-module-optimization","-num-threads","10","-serialize-diagnostics","-O","-j10","-DSWIFT_PACKAGE","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/kaifengyang/Desktop/antigravity/look-mirror/.build/arm64-apple-macosx/release/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","LookMirror_main","-color-diagnostics","-swift-version","5","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","look_mirror"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/kaifengyang/Desktop/antigravity/look-mirror/Sources/LookMirror/","/Users/kaifengyang/Desktop/antigravity/look-mirror/Package.swift","/Users/kaifengyang/Desktop/antigravity/look-mirror/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+
